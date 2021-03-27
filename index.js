@@ -9,58 +9,53 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
  {          type: 'input',
             name: 'Project Title',
-            message: 'What is the Project Title',
-}
+            message: 'What is the Project Title?'
 
-{          type: 'input'
-           name: 
-           message: 
-}
+ },
+{          type: 'input',
+           name: 'description',
+           message: 'Write a brief discription of your project'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'installation',
+           message: 'Describe the installation process if any'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'usage',
+           message: 'What is the project usage for?'
+},
 
-{          type: 'list'
-           name: 
-           message: 
-}
+{          type: 'list',
+           name: 'licesnse',
+           message: 'choose the appropriate license for this project'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'contributing',
+           message: 'Who are the contributers of this project?'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'tests',
+           message: 'Is there a test included?'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'questions',
+           message: 'What do I do if I have an issue?'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'username',
+           message: 'Please enter yout github username:'
+},
 
-{          type: 'input'
-           name: 
-           message: 
-}
-
-{          type: 'input'
-           name: 
-           message: 
-}
+{          type: 'input',
+           name: 'email',
+           message: 'Please entewr your email:'
+},
 ];
 
 // TODO: Create a function to write README file
