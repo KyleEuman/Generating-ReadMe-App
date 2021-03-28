@@ -2,7 +2,7 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
-const generateReadme = require("./utils/generateReadme")
+const generateMarkdown = require("generateMarkdown")
 
 
 // TODO: Create an array of questions for user input
@@ -62,10 +62,15 @@ inquirer.prompt( [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const fileName
-    const data
-    
+    fs.writeFile(fileName, data, err => {
+        if (err)  {
+            return console.log(err);
+        }
+        console.log('Congratulations you have successfully created your Readme' )
+    })
+
 }
+const writeFileAsync = util.promisify(writeToFile);
 
 // TODO: Create a function to initialize app
 function init() {
